@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A6C58471DAC84510036BE4A /* CardCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C58461DAC84510036BE4A /* CardCellCollectionViewCell.m */; };
+		8A6C584A1DACE8940036BE4A /* CardSelectedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C58491DACE8940036BE4A /* CardSelectedLayout.m */; };
 		8A79620C1DAB41190033D03A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A79620B1DAB41190033D03A /* main.m */; };
 		8A79620F1DAB41190033D03A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A79620E1DAB41190033D03A /* AppDelegate.m */; };
 		8A7962121DAB41190033D03A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7962111DAB41190033D03A /* ViewController.m */; };
@@ -14,9 +16,14 @@
 		8A7962181DAB41190033D03A /* DDCardAnimation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A7962161DAB41190033D03A /* DDCardAnimation.xcdatamodeld */; };
 		8A79621A1DAB41190033D03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7962191DAB41190033D03A /* Assets.xcassets */; };
 		8A79621D1DAB41190033D03A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A79621B1DAB41190033D03A /* LaunchScreen.storyboard */; };
+		8A7962261DAB93910033D03A /* CardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7962251DAB93910033D03A /* CardLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A6C58451DAC84510036BE4A /* CardCellCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCellCollectionViewCell.h; sourceTree = "<group>"; };
+		8A6C58461DAC84510036BE4A /* CardCellCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCellCollectionViewCell.m; sourceTree = "<group>"; };
+		8A6C58481DACE8940036BE4A /* CardSelectedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardSelectedLayout.h; sourceTree = "<group>"; };
+		8A6C58491DACE8940036BE4A /* CardSelectedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardSelectedLayout.m; sourceTree = "<group>"; };
 		8A7962071DAB41190033D03A /* DDCardAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDCardAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A79620B1DAB41190033D03A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A79620D1DAB41190033D03A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +35,8 @@
 		8A7962191DAB41190033D03A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A79621C1DAB41190033D03A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A79621E1DAB41190033D03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A7962241DAB93910033D03A /* CardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardLayout.h; sourceTree = "<group>"; };
+		8A7962251DAB93910033D03A /* CardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +78,12 @@
 				8A79621B1DAB41190033D03A /* LaunchScreen.storyboard */,
 				8A79621E1DAB41190033D03A /* Info.plist */,
 				8A7962161DAB41190033D03A /* DDCardAnimation.xcdatamodeld */,
+				8A7962241DAB93910033D03A /* CardLayout.h */,
+				8A7962251DAB93910033D03A /* CardLayout.m */,
+				8A6C58481DACE8940036BE4A /* CardSelectedLayout.h */,
+				8A6C58491DACE8940036BE4A /* CardSelectedLayout.m */,
+				8A6C58451DAC84510036BE4A /* CardCellCollectionViewCell.h */,
+				8A6C58461DAC84510036BE4A /* CardCellCollectionViewCell.m */,
 				8A79620A1DAB41190033D03A /* Supporting Files */,
 			);
 			path = DDCardAnimation;
@@ -154,9 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7962261DAB93910033D03A /* CardLayout.m in Sources */,
 				8A7962121DAB41190033D03A /* ViewController.m in Sources */,
+				8A6C58471DAC84510036BE4A /* CardCellCollectionViewCell.m in Sources */,
 				8A79620F1DAB41190033D03A /* AppDelegate.m in Sources */,
 				8A7962181DAB41190033D03A /* DDCardAnimation.xcdatamodeld in Sources */,
+				8A6C584A1DACE8940036BE4A /* CardSelectedLayout.m in Sources */,
 				8A79620C1DAB41190033D03A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4774D7Z934;
 				INFOPLIST_FILE = DDCardAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = z.tondy.DDCardAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4774D7Z934;
 				INFOPLIST_FILE = DDCardAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = z.tondy.DDCardAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +334,7 @@
 				8A7962231DAB41190033D03A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
