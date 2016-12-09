@@ -16,6 +16,8 @@
 
 @end
 
+static int cellCount;
+
 @implementation CardCellCollectionViewCell
 
 -(instancetype)init
@@ -29,6 +31,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self initUI];
+        cellCount++;
+        NSLog(@"%d",cellCount);
     }
     return self;
 }

@@ -179,9 +179,14 @@ static CGFloat cellHeight;  //卡片宽度
     CGFloat ni = [self defaultYWithRow:row];
     CGFloat mi = self.m0+row*self.deltaOffsetY;
     CGFloat tmp = mi - x;
-    tmp = fmaxf(0, tmp);    //不小于0
-    CGFloat y = powf((tmp)/mi, 4)*ni;
-//    NSLog(@"%d--y:%f ",(int)row,y);
+    CGFloat y = 0;
+    if (tmp >= 0) {
+        y = powf((tmp)/mi, 4)*ni;
+    }
+    else
+    {
+        y = 0 - (cellHeight - tmp);
+    }
     return y;
 }
 
@@ -199,6 +204,9 @@ static CGFloat cellHeight;  //卡片宽度
 -(CGFloat)transformRatio:(CGFloat)originY
 {
     // y = (x/range)^0.4
+    if (originY < 0) {
+        return 1;
+    }
     CGFloat range = [UIScreen mainScreen].bounds.size.height ;
     originY = fminf(originY, range);
     CGFloat ratio = powf(originY/range, 0.04);

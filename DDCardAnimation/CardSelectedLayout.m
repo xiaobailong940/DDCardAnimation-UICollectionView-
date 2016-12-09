@@ -102,7 +102,13 @@ static CGFloat cellHeight;  //卡片宽度
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
-    return self.cellLayoutList;
+    NSMutableArray *array = [NSMutableArray array];
+    for (UICollectionViewLayoutAttributes* attribute in self.cellLayoutList) {
+        if (CGRectIntersectsRect(attribute.frame, rect)) {
+            [array addObject:attribute];
+        }
+    }
+    return array;
 }
 
 -(UICollectionViewLayoutAttributes*)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
